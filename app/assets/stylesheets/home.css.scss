@@ -14,3 +14,34 @@ width: 100%; // Add this
 body {
 	padding-top: 50px;
 }
+
+/** Carousel Button**/
+body .btn-primary {
+	background-color: #586D74;
+}
+
+/** Mission Row**/
+#mission {
+	/**background-color: #586D74;**/
+	background-color: lightgrey;
+}
+
+/** About Row**/
+#about {
+	/**background-color: #586D74;**/
+	border-top: 15px solid darkred;
+	background-color: lightgrey;
+}
+
+
+/** Services Row**/
+#services {
+	border-top: 15px solid darkred;
+	background-color: lightgrey;
+}
+
+/** Contact Row**/
+#contact {
+	border-top: 15px solid darkred;
+	background-color: lightgrey;
+}
