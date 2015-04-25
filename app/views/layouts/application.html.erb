@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <title>Insitu Power</title>
+ <title>Brendan Gillies</title>
  <title><%= yield(:title)%></title> 
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -26,7 +26,11 @@
 
 <body>
 	
+	<%= render 'shared/navbar' %>
+	
 	<%= yield %>
+	
+	<%= render 'shared/footer' %>
 	
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
