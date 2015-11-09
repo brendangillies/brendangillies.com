@@ -1,31 +1,24 @@
+
+
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-.jumbotron {
-	background: image-url('blue.jpg');
-	background-size: cover;
-	height: 100%;
-	fixed-left: true;
-}
 
+.row-1 {
+	background:
+		linear-gradient(
+		rgba(0, 0, 0, 0.45), 
+		rgba(0, 0, 0, 0.45)
+    	), 
+		url('blue.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vw;
+}
 
 h1 {
-	text-align: center;
-	padding-left: 200px;
-	padding-top: 100px;
-}
-
-
-p {
-	text-align: center;
-	padding-left: 200px;
-}
-
-body {
- 	padding-top: 50px;
-	margin-top: 50px;
-	margin-bottom: 50px;
-	background: none;
+	color: grey;
+	
 }
