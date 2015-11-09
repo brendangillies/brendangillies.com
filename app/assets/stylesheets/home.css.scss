@@ -7,12 +7,7 @@
 
 
 .row-1 {
-	background:
-		linear-gradient(
-		rgba(0, 0, 0, 0.45), 
-		rgba(0, 0, 0, 0.45)
-    	), 
-		url('calgary.jpg');
+	background: lightgrey;
 	background-size: cover;
 	background-repeat: no-repeat;
 	height: 50vw;
@@ -22,28 +17,21 @@
 	padding-top: 10vw;
 }
 
-.row-2 {
-	background: 
-	linear-gradient(
-	rgba(0, 0, 0, 0.45), 
-	rgba(0, 0, 0, 0.45)
-	), 
-	url('blue.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 50vw;
-	fixed-left: true;
+.text2{
+	padding-top: 3vw;
 }
 
 
+
 h1 {
-	color: white;
+	color: black;
 	size: 10vw;
 	
 }
 
+
 p {
-	color: white;
+	color: black;
 }
 
 
