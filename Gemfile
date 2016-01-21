@@ -15,6 +15,8 @@ end
 #---- 
 
 
+gem 'font-awesome-sass'
+
 gem 'bootstrap-sass', '~> 3.3.3'
 
 # Use SCSS for stylesheets
