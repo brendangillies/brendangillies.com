@@ -9,6 +9,10 @@ body {
 	background: lightgrey;
 }
 
+.logo-container {
+	height: 10vw;
+}
+
 .btn-primary {
 	background: navy-blue;
 	-webkit-transition: all 0.5s ease;
@@ -25,9 +29,6 @@ body {
 	background: lightgrey;
 }
 
-
-
-
 .fa-cog:hover {
   -webkit-transform: rotate(360);
 }
@@ -35,7 +36,7 @@ body {
 
 
 .container-1 {
-	background: lightgrey;
+	background: grey;
 	height: 50vw;
 	padding-top: 2vw;
 	color: white;
