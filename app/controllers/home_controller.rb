@@ -3,7 +3,10 @@ class HomeController < ApplicationController
   def index
   end
   
-  def about 
+  def portfolio
   end
-  
+
 end
+
+
+

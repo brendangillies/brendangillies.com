@@ -7,12 +7,22 @@
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
 </head>
 
-
 <body>
+	<% if !flash[:notice].blank? %>
+		<div class="row text-center row-notice">
+				<h3><%= flash[:notice]%></h3>
+		</div>
+	<% end%>
+	
+	
 	<%= yield %>
 </body>
 
+
+   	<!-- Latest compiled and minified JavaScript -->
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
 </html>

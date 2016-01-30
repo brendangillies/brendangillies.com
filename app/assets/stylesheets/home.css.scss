@@ -9,7 +9,18 @@ body {
 	background: lightgrey;
 }
 
+.container-nav {
+	padding-top: 10px;
+}
 
+.row-notice {
+	background: lightgreen;
+}
+
+
+.icon-bar {
+	text-align: center;
+}
 
 .btn-primary {
 	background: navy-blue;
@@ -31,8 +42,6 @@ body {
   -webkit-transform: rotate(360);
 }
 
-
-
 .container-1 {
 	background: grey;
 	padding-top: 5vw;
@@ -40,7 +49,9 @@ body {
 	color: white;
 }
 
-
+.container-content {
+	padding-top: 50px;
+}
 
 .row-3 {
 	background: 
@@ -55,7 +66,7 @@ body {
 	padding-top: 2vw;
 }
 
-.row-4 {
+.row-leismer {
 	background: 
 		linear-gradient(
 		rgba(0, 0, 0, 0.45), 
@@ -64,13 +75,55 @@ body {
 		url('construction.jpg');
 	background-size: cover;
 	background-repeat: no-repeat;
-	height: 20vw;
+	height: 10vw;
 	padding-top: 2vw;
 }
 
+.row-isolation {
+	background: 
+		linear-gradient(
+		rgba(0, 0, 0, 0.45), 
+		rgba(0, 0, 0, 0.45)
+		), 
+		url('red.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 10vw;
+	padding-top: 2vw;
+}
+
+.row-keystone {
+	background: 
+		linear-gradient(
+		rgba(0, 0, 0, 0.45), 
+		rgba(0, 0, 0, 0.45)
+		), 
+		url('green.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 10vw;
+	padding-top: 2vw;
+}
+
+.row-insitu {
+	background: 
+		linear-gradient(
+		rgba(0, 0, 0, 0.45), 
+		rgba(0, 0, 0, 0.45)
+		), 
+		url('blue.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 10vw;
+	padding-top: 2vw;
+}
+
+
+
 h1 {
 	color: white;
-	size: 10vw;	
+	size: 10vw;
+	font-family: 'Satisfy', cursive;	
 }
 
 h2 {
@@ -82,7 +135,11 @@ h3 {
 	color: white;
 }
 
-
+h4 {
+	color: navy-blue;
+	height: 50px;
+	font-family: 'Satisfy', cursive;	
+}
 
 p {
 	color: white;
