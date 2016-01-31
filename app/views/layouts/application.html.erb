@@ -11,11 +11,22 @@
 </head>
 
 <body>
+	
+
 	<% if !flash[:notice].blank? %>
 		<div class="row text-center row-notice">
 				<h3><%= flash[:notice]%></h3>
 		</div>
 	<% end%>
+	
+	
+	<% if !flash[:error].blank? %>
+		<div class="row text-center row-error">
+				<h3><%= flash[:error]%></h3>
+		</div>
+	<% end%>
+	
+	
 	
 	
 	<%= yield %>

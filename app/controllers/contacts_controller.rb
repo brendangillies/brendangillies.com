@@ -15,10 +15,11 @@ class ContactsController < ApplicationController
     # Save the object 
     if @contact.save
     # If save succeeds, redirect to the index action 
-    flash[:notice] = "Thanks for your note!"
+    flash[:notice] = "Thanks for your message."
     redirect_to(:controller => 'home', :action => 'index')
     else
     # If save fails, redisplay the form so user can fix problems
+    flash[:error] = "Something's not right."
     render('new')
     end
   end
