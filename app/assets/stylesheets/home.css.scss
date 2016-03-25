@@ -3,10 +3,14 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200);
 
 body {
 	background: lightgrey;
+}
+
+.jumbotron {
+	background-color: rgba(0,0,0,0.8);
 }
 
 .container-nav {
@@ -16,7 +20,6 @@ body {
 .row-notice {
 	background: lightgreen;
 }
-
 
 .row-error {
 	background: red;
@@ -48,7 +51,6 @@ body {
 }
 
 .container-1 {
-	background: grey;
 	padding-top: 5vw;
 	padding-bottom: 5vw;
 	color: white;
@@ -71,59 +73,9 @@ body {
 	padding-top: 2vw;
 }
 
-.row-leismer {
-	background: 
-		linear-gradient(
-		rgba(0, 0, 0, 0.45), 
-		rgba(0, 0, 0, 0.45)
-		), 
-		url('construction.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 10vw;
-	padding-top: 2vw;
+.row-rails {
+	background: black;
 }
-
-.row-isolation {
-	background: 
-		linear-gradient(
-		rgba(0, 0, 0, 0.45), 
-		rgba(0, 0, 0, 0.45)
-		), 
-		url('red.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 10vw;
-	padding-top: 2vw;
-}
-
-.row-keystone {
-	background: 
-		linear-gradient(
-		rgba(0, 0, 0, 0.45), 
-		rgba(0, 0, 0, 0.45)
-		), 
-		url('green.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 10vw;
-	padding-top: 2vw;
-}
-
-.row-insitu {
-	background: 
-		linear-gradient(
-		rgba(0, 0, 0, 0.45), 
-		rgba(0, 0, 0, 0.45)
-		), 
-		url('blue.jpg');
-	background-size: cover;
-	background-repeat: no-repeat;
-	height: 10vw;
-	padding-top: 2vw;
-}
-
-
 
 h1 {
 	color: white;
@@ -148,6 +100,8 @@ h4 {
 
 p {
 	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
 }
 
 .row-footer {
