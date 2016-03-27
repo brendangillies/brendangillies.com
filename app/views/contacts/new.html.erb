@@ -7,11 +7,14 @@
 		<div class="jumbotron">
 				<h1>Get in touch</h1>
 				<div clas='form'>
-					<% if !flash[:error].blank? %>
-						<div class="row text-center row-error">
-								<h3><%= flash[:error]%></h3>
-						</div>
-					<% end%>
+					
+						<% if !flash[:error].blank? %>
+							<div class="alert alert-danger" role="alert">
+									<%= flash[:error]%>
+							</div>
+						<% end%>
+					
+					
 				
 				<%= bootstrap_form_for(@contact, :url => {:action => 'create'}, :class => 'form-inline') do |f| %>
 			
