@@ -13,7 +13,8 @@
 						</div>
 					<% end%>
 				
-				<%= bootstrap_form_for(@contact, :url => {:action => 'create'}) do |f| %>
+				<%= bootstrap_form_for(@contact, :url => {:action => 'create'}, :class => 'form-inline') do |f| %>
+			
 					<%= f.text_field :first_name, :label => "First" %></br>
 					<%= f.text_field :last_name, :label => "Last" %></br>
 					<%= f.email_field :email, :label => "E-mail"%></br>

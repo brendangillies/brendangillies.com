@@ -5,12 +5,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200);
 
+
+a {
+	color: rgba(0,0,50,0.95);
+}
+
+
 body {
 	background: lightgrey;
 }
 
 .jumbotron {
-	background-color: rgba(0,0,0,0.8);
+	background-color: rgba(0,0,50,0.95);
 }
 
 .container-nav {
@@ -31,7 +37,8 @@ body {
 }
 
 .btn-primary {
-	background: navy-blue;
+	background: transparent;
+	border: solid white 1px;
 }
 
 .btn-primary:hover {

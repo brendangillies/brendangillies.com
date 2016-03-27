@@ -21,6 +21,7 @@ gem 'bootstrap-sass', '~> 3.3.3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 gem 'bootstrap_form'
+gem 'simple_form'
 
 gem 'autoprefixer-rails'
 
