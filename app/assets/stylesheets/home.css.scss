@@ -32,23 +32,17 @@ body {
 
 .btn-primary {
 	background: navy-blue;
-	-webkit-transition: all 0.5s ease;
 }
 
 .btn-primary:hover {
-	-webkit-transform: scale(1.1);
 	background: lightgrey;
 	box-shadow: 3px 3px 5px #000;
 }
 
 .fa:hover {
-	-webkit-transform: scale(1.1);
 	background: lightgrey;
 }
 
-.fa-cog:hover {
-  -webkit-transform: rotate(360);
-}
 
 .container-1 {
 	padding-top: 5vw;
@@ -73,9 +67,6 @@ body {
 	padding-top: 2vw;
 }
 
-.row-rails {
-	background: black;
-}
 
 h1 {
 	color: white;
@@ -84,7 +75,7 @@ h1 {
 }
 
 h2 {
-	color:white;
+	color: white;
 	size: 10vw;
 }
 

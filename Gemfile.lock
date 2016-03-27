@@ -45,6 +45,7 @@ GEM
     bootstrap-sass (3.3.6)
       autoprefixer-rails (>= 5.2.1)
       sass (>= 3.3.4)
+    bootstrap_form (2.3.0)
     builder (3.2.2)
     byebug (8.2.1)
     coffee-rails (4.1.1)
@@ -159,6 +160,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails
   bootstrap-sass (~> 3.3.3)
+  bootstrap_form
   byebug
   coffee-rails (~> 4.1.0)
   font-awesome-sass
@@ -175,3 +177,6 @@ DEPENDENCIES
   turbolinks
   uglifier (>= 1.3.0)
   web-console (~> 2.0)
+
+BUNDLED WITH
+   1.11.2

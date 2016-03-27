@@ -6,63 +6,27 @@
 <div class="container container-content">
 	
 	
-	<div class="row row-1 text-center">
-		<h3>Get in touch</h3>
+	<div class="jumbotron">
+		<h1>Get in touch</h1>
 			
-			<div class="col-sm-3"></div>
-			
-			<div class="col-sm-6">
-	
+			<div clas='form'>
 				<% if !flash[:error].blank? %>
 					<div class="row text-center row-error">
 							<h3><%= flash[:error]%></h3>
 					</div>
 				<% end%>
 				
-				
-				<%= form_for(:contact, :url => {:action => 'create'}) do |f| %>
-					<table summary="Form for contact">
-						<tr>
-						<th><%= f.label(:first_name, "First")%></th>
-						<td><%= f.text_field(:first_name)%></td>
-						</tr>
-			
-						<tr>
-						<th><%= f.label(:last_name, "Last") %></th>
-						<td><%= f.text_field(:last_name)%></td>
-						</tr>
-			
-						<tr>
-						<th><%= f.label(:email, "E-mail") %></th>
-						<td><%= f.text_field(:email)%></td>
-						</tr>
-											
-						<tr>
-						<th><%= f.label(:phone, "Phone (Optional)")%></th>
-						<td><%= f.text_field(:phone)%></td>
-						</tr>
-					
-						<tr>
-						<th><%= f.label(:company)%></th>
-						<td><%= f.text_field(:company)%></td>
-						</tr>
-				
-					
-						<tr>
-						<th><%= f.label(:message)%></th>
-						<td><%= f.text_area(:message, :size => "24x5")%></td>
-						</tr>
-					</table>
-				
-					<div class="form-buttons">
-						<%= submit_tag("Create Contact")%>
-					</div>
-	
-				<% end %>
+			<%= bootstrap_form_for(@contact, :url => {:action => 'create'}) do |f| %>
+				<%= f.text_field :first_name, :label => "First" %></br>
+				<%= f.text_field :last_name, :label => "Last" %></br>
+				<%= f.email_field :email, :label => "E-mail"%></br>
+				<%= f.telephone_field :phone %></br>
+				<%= f.text_field :company %></br>
+				<%= f.text_area :message %></br>
+		
+				<%= f.submit "Submit"%>
+			<% end %>
 			</div>
-			
-			<div class="col-sm-3"></div>
-			
 			
 			
 	</div>
