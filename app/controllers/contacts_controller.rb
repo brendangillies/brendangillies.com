@@ -2,7 +2,6 @@ class ContactsController < ApplicationController
   
   def index
     @contacts = Contact.sorted 
-    
   end
   
   def new 

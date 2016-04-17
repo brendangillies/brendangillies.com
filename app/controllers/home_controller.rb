@@ -5,6 +5,9 @@ class HomeController < ApplicationController
   
   def portfolio
   end
+  
+  def calendar 
+  end
 
 end
 
