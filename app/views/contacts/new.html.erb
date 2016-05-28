@@ -18,9 +18,9 @@
 				
 					<%= bootstrap_form_for(@contact, :url => {:controller => 'contacts', :action => 'create'}) do |f| %>
 			
-						<%= f.text_field :first_name, :label => "First" %>
-						<%= f.text_field :last_name, :label => "Last" %>
-						<%= f.email_field :email, :label => "E-mail"%>
+						<%= f.text_field :first_name, :label => "First*" %>
+						<%= f.text_field :last_name, :label => "Last*" %>
+						<%= f.email_field :email, :label => "E-mail*"%>
 						<%= f.telephone_field :phone %>
 						<%= f.text_field :company %>
 						<%= f.text_area :message %>
