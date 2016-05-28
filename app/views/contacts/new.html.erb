@@ -4,28 +4,30 @@
 
 
 	<div class="container-fluid text-center container-1">
-		<div class="jumbotron">
+		<div class="jumbotron contact-page">
 				<h1>Get in touch</h1>
-				<div clas='form'>
+				<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-lg-6 col-lg-offset-3">
+					<div clas='form'>
 					
-						<% if !flash[:error].blank? %>
-							<div class="alert alert-danger" role="alert">
-									<%= flash[:error]%>
-							</div>
-						<% end%>
+							<% if !flash[:error].blank? %>
+								<div class="alert alert-danger" role="alert">
+										<%= flash[:error]%>
+								</div>
+							<% end%>
 					
 				
-				<%= bootstrap_form_for(@contact, :url => {:controller => 'contacts', :action => 'create'}, :class => 'form-inline') do |f| %>
+					<%= bootstrap_form_for(@contact, :url => {:controller => 'contacts', :action => 'create'}) do |f| %>
 			
-					<%= f.text_field :first_name, :label => "First" %></br>
-					<%= f.text_field :last_name, :label => "Last" %></br>
-					<%= f.email_field :email, :label => "E-mail"%></br>
-					<%= f.telephone_field :phone %></br>
-					<%= f.text_field :company %></br>
-					<%= f.text_area :message %></br>
+						<%= f.text_field :first_name, :label => "First" %>
+						<%= f.text_field :last_name, :label => "Last" %>
+						<%= f.email_field :email, :label => "E-mail"%>
+						<%= f.telephone_field :phone %>
+						<%= f.text_field :company %>
+						<%= f.text_area :message %>
 		
-					<%= f.submit "Submit"%>
-				<% end %>
+						<%= f.submit "Submit"%>
+					<% end %>
+					</div>
 				</div>
 		</div>
 	</div>

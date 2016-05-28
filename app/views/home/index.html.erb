@@ -1,12 +1,43 @@
 <% provide(:home, "active")%>
 
+	<!-- Top content -->
+	<div class="top-content container-fluid">
+		<div class="jumbotron jumbotron-main text-center">
+			<h1> Brendan Gillies</h1>
+			<p>Interactive resume.</p>
+	
+			<a class="scroll-link landing-down" href="#about-me"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a>
+	
+		</div>
+	
+	</div>
 
 
-	<div class="container-fluid text-center container-1">
-		<div class="jumbotron">
-				<h1>Brendan Gillies</h1>
-				<a class="btn btn-primary" href="/home/portfolio"> <i class="fa fa-desktop fa-2x"></i> </a>
-				<a class="btn btn-primary" href="/contacts/new"> <i class="fa fa-envelope-o fa-2x"></i> </a>
-				<a class="btn btn-primary" href="http://linkedin.com/in/brendangillies"> <i class="fa fa-linkedin fa-2x"></i> </a>
+	<!-- Second Page (About Me) -->
+	<div class='about-me-container container-fluid'>
+		<div class='container-fixed'>
+			<%= render(:partial => 'aboutme')%>
 		</div>
 	</div>
+
+
+
+	<!-- Third Page (Projects) -->
+	<div class='projects-container container-fluid'>
+		<%= render(:partial => 'projects')%>
+	</div>
+	
+	<!-- Fourth Page (Contact) -->
+	<div class='contact-container container-fluid'>
+		<div class="jumbotron text-center">
+			<h1>Contact</h1>
+			<div class="row">
+		 	   <div class="col-xs-3 col-xs-offset-3"><button class="btn-secondary"> <a href="/contacts/new"><i href="/contacts/new" class="fa fa-envelope-o"></i></a></button>
+			   </div>
+			   <div class="col-xs-3"><button class="btn-secondary"> <a href="https://www.linkedin.com/in/brendangillies"><i class="fa fa-linkedin"></i></a></button>
+		  	 	</div>
+			</div>
+		</div>
+	</div>
+
+

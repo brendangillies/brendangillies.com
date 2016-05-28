@@ -18,7 +18,7 @@ class ContactsController < ApplicationController
     redirect_to(:controller => 'home', :action => 'index')
     else
     # If save fails, redisplay the form so user can fix problems
-    flash[:error] = "Something's not right."
+    flash[:error] = "Please correct the information below."
     render('new')
     end
   end

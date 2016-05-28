@@ -1,0 +1,102 @@
+
+
+// Place all the styles related to the home controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200);
+
+
+a {
+	color: rgba(0,0,50,0.95);
+}
+
+
+body {
+	background: lightgrey;
+}
+
+.jumbotron {
+	background-color: rgba(0,0,50,0.95);
+}
+
+.container-nav {
+	padding-top: 10px;
+}
+
+
+.icon-bar {
+	text-align: center;
+}
+
+.btn-primary {
+	background: transparent;
+	border: solid white 1px;
+}
+
+.btn-primary:hover {
+	background: lightgrey;
+	box-shadow: 3px 3px 5px #000;
+}
+
+.fa:hover {
+	background: lightgrey;
+}
+
+
+.container-1 {
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	background-color: navy-blue;
+}
+
+.container-content {
+	padding-top: 50px;
+}
+
+.row-3 {
+	background: 
+		linear-gradient(
+		rgba(0, 0, 0, 0.45), 
+		rgba(0, 0, 0, 0.45)
+		), 
+		url('calgary.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 50vw;
+	padding-top: 2vw;
+}
+
+
+h1 {
+	color: white;
+	size: 10vw;
+	font-family: 'Satisfy', cursive;	
+}
+
+h2 {
+	color: white;
+	size: 10vw;
+}
+
+h3 {
+	color: white;
+}
+
+h4 {
+	color: navy-blue;
+	height: 50px;
+	font-family: 'Satisfy', cursive;	
+}
+
+p {
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+}
+
+.row-footer {
+	padding-top: 10px;
+}
+
+
+
