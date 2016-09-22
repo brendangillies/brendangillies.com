@@ -124,15 +124,11 @@ h3 {
 
 
 .btn-secondary { 
-	width: 3em;
-	height: 3em;
+	background: $primary;
 	margin: 0 auto;
-    font-size: 2em;
 	text-align: center;
 	color: white;
 	border-color: white;
-    -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%;
-	background: $secondary;
 }
 
 
