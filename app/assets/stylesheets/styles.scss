@@ -15,6 +15,14 @@ $secondary: #a3c2c2;
 
 //General Styles
 
+.landing-down { 
+	position: absolute;
+	left: center;
+	bottom: 10px;
+	
+	color: white;
+}
+
 .nav-icon { 
 	padding: 15px;
 	color: $primary;
@@ -44,12 +52,6 @@ p {
 	color: white;
 	font-family: 'Raleway', sans-serif;
 }
-
-
-.landing-down {
-	color: white;
-}
-
 
 .top-content {
 	height: 100vh;
@@ -107,10 +109,6 @@ h3 {
 	background-size: cover;
 }
 
-.carousel {
-	background: #879292;
-}
-
  .carousel-indicators {
      position: relative;
      top: 2em;
@@ -146,7 +144,7 @@ h3 {
 
 
 .contact-container { 
-	background: #34495E;
+	background: $primary;
 }
 
 //Contact form 
@@ -173,16 +171,6 @@ label.control-label {
 			url('chambers.jpg') no-repeat center center;
 		background-size: cover;
 	}
-	
-	.about-me-container {
-		h2 {
-			color: white;
-		} 
-		min-height: 75vh;
-		background:  #75a3a3;
-		background-size: cover;
-	}	
-	
 }
 
 //Tablet
@@ -226,8 +214,6 @@ label.control-label {
 		padding-right: 50px;
 		padding-bottom: 100px;
 	}
-	
-	
 	
 }
 
