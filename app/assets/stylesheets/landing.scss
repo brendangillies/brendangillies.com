@@ -7,7 +7,7 @@
 @import url(https://fonts.googleapis.com/css?family=Raleway:400,100,200);
 
 //Variables
-$primary: #5c8a8a;
+$primary: #34495E;
 $secondary: #a3c2c2;
 
 
@@ -138,9 +138,16 @@ h3 {
 }
 
 
+.footer-icon { 
+	padding: 1em;
+	color: #F5AB35;
+}
 
 
 
+.contact-container { 
+	background: #34495E;
+}
 
 //Contact form 
 .container-1 { 
