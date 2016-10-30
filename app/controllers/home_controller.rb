@@ -1,12 +1,8 @@
 class HomeController < ApplicationController
   
+  before_filter :check_for_mobile, :only => :index
+  
   def index
-  end
-  
-  def portfolio
-  end
-  
-  def calendar 
   end
 
 end

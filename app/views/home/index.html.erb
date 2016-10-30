@@ -1,35 +1,59 @@
+
+
 <% provide(:home, "active")%>
+<%=render :partial => 'navigation'%>
 
-	<!-- Top content -->
-	<div class="top-content container-fluid">
-		<div class="jumbotron jumbotron-main text-center">
-			<h1> Brendan Gillies</h1>
-			<p>online profile</p>
-			<a class="scroll-link landing-down" href="#about-me"><i class="fa fa-angle-double-down fa-3x" aria-hidden="true"></i></a>
+
+<!-- Top content -->
+<div class="top-content container-fluid">
 	
-		</div>
-	
-	</div>
-
-
-	<!-- Second Page (About Me) -->
-	<div class='about-me-container container-fluid'>
-		<div class='container-fixed'>
-			<%= render(:partial => 'aboutme')%>
-		</div>
-	</div>
-
-
-
-	<!-- Third Page (Projects) -->
-	<div class='projects-container container-fluid'>
-		<%= render(:partial => 'projects')%>
+	<div class='video-background'>	
+			<%= video_tag "turbine", :controls => false, :autoplay => true, :loop => true %>
 	</div>
 	
-	<!-- Fourth Page (Contact) -->
-	<div class='contact-container'>
-			<div class="row text-center">
-		 	   <a href="mailto:admin@brendangillies.com?Subject=Hello"><i href="/contacts/new" class="fa fa-envelope-o fa-3x footer-icon"></i></a>
-			  <a href="https://www.linkedin.com/in/brendangillies"><i class="fa fa-linkedin fa-3x footer-icon"></i></a>
+	<div class='container container-fixed'>
+		<h1>Brendan Gillies</h1>
+	</div>
+	<hr></hr>
+	<div class='row'>
+		<div class='jumbotron'>
+			<div class='col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3'>
+				<p>I'm <em class='text-shuffle' data-word-array='["an engineer in training", "a full-stack developer", "an entrepreneur"]'> a dreamer</em>.<br>
+					
+				<br>I'm focused on leveraging technology to solve big problems, with people equally as ambitious.</p>
 			</div>
+			<br>
+		</div>
 	</div>
+	
+	<div class='row'>
+		<%= render(:partial => 'aboutme')%>
+	</div>
+	
+	
+	<hr></hr>
+		<div class='row'>
+			<div class='container container-fixed text-center'>	
+				<div class='col-xs-6 col-md-3 col-md-offset-3'>
+					<h2>Blog Posts</h2>
+					<p><%=link_to "Why I've Learned to Code" %></p>
+					<p><%=link_to "Experiments in Outsourcing" %></p>
+				</div>
+				<div class='col-xs-6 col-md-3'>
+					<h2>Projects</h2>
+					<p><a href='https://rhubarbcollective.com' target='_blank'>Rhubarb Collective</a></p>
+					<p><%= link_to "3D Printed Orthotic" %></p>
+					<p><%= link_to "Wind Powered Pump"%></p>
+					<p><%= link_to "Insitu Power Website"%></p>
+				</div>
+			</div>
+		</div>
+
+	<!-- Fourth Page (Contact) -->
+		<div class="row text-center">
+	 	   <a href="mailto:admin@brendangillies.com?Subject=Hello"><i href="/contacts/new" class="fa fa-envelope-o fa-3x footer-icon"></i></a>
+		  <a href="https://www.linkedin.com/in/brendangillies"><i class="fa fa-linkedin fa-3x footer-icon"></i></a>
+		</div>
+
+</div>
+
