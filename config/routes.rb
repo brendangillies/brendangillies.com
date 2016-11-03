@@ -2,8 +2,8 @@ Rails.application.routes.draw do
  
   root 'home#index'
 
-  match ':controller(/:action(/:id))', :via => [:get, :post]
- 
+  get '/blog', :controller => 'home', :action => 'blog'
+   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

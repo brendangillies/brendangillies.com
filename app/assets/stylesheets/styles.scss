@@ -15,6 +15,7 @@ $secondary: #a3c2c2;
 .top-content { 
 	background: rgba(255,255,255,0.8);
 	background-size: cover;
+	min-height: 100vh;
 }
 .video-background {
     position: fixed;
@@ -33,7 +34,19 @@ video {
 	    min-height: 100%;
 }
 
+.btn-primary {
+	width: 3em;
+	height: 3em;
+	margin: 0 auto;
+    font-size: 2.5em;
+	text-align: center;
+    line-height: 2.5em;
+	border-color: white;
+	background: grey;
+    -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%;
+    -o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
 
+}
 
 //General Styles
 
@@ -65,19 +78,6 @@ p {
 	font-family: 'Raleway', sans-serif;
 }
 
-
-.btn-primary {
-	width: 3em;
-	height: 3em;
-	margin: 0 auto;
-    font-size: 2.5em;
-	text-align: center;
-    line-height: 2.5em;
-	border-color: white;
-	background: grey;
-    -moz-border-radius: 100%; -webkit-border-radius: 100%; border-radius: 100%;
-    -o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
-}
 
 .list-group-item {
 	background: transparent;
@@ -157,7 +157,7 @@ hr.small {
     height: 100%;
     transform: translateX(250px);
     overflow-y: auto;
-    background: rgba($primary,0.7);
+    background: rgba($primary,1);
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -ms-transition: all 0.4s ease 0s;
@@ -182,7 +182,7 @@ hr.small {
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .sidebar-nav li a:hover {

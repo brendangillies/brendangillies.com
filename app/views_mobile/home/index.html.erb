@@ -11,13 +11,6 @@
 		<p><em class='text-shuffle' data-word-array='["engineer in training", "full-stack developer"]'>designer</em></p>
 	</div>
 	<hr></hr>
-	<div class='row'>
-			<div class='col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3'>
-				<div class='jumbotron'>
-					<p>I believe in leveraging technology to solve large scale problems.</p>
-				</div>
-			</div>
-	</div>
 	
 	<div class='row'>
 		<%= render(:partial => 'aboutme')%>
@@ -29,18 +22,43 @@
 			<div class='container container-fixed text-center'>	
 				<div class='col-xs-6 col-md-3 col-md-offset-3'>
 					<h2>Blog Posts</h2>
-					<p><%=link_to "Why I've Learned to Code" %></p>
-					<p><%=link_to "Experiments in Outsourcing" %></p>
+					<p><%=link_to "How I Learned to Code", blog_path %></p>
+					<p><%=link_to "Experiments in Outsourcing", blog_path %></p>
 				</div>
 				<div class='col-xs-6 col-md-3'>
 					<h2>Projects</h2>
 					<p><a href='https://rhubarbcollective.com' target='_blank'>Rhubarb Collective</a></p>
-					<p><%= link_to "3D Printed Orthotic" %></p>
+					
+					<!-- Trigger the modal with a button -->
+					<p><a data-toggle="modal" data-target="#myModal">3D Printed Guitar Orthotic</a></p>
+
+					<!-- Modal -->
+					<div id="myModal" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">3D Printed Guitar Orthotic</h4>
+					      </div>
+					      <div class="modal-body">
+							<div class="embed-responsive embed-responsive-16by9">
+							  Test
+							  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/WTNe69AY4OI"></iframe>
+							</div>
+					      </div>
+					    </div>
+
+					  </div>
+					</div>
+					
+					
 					<p><%= link_to "Wind Powered Pump"%></p>
-					<p><%= link_to "Insitu Power Website"%></p>
 				</div>
 			</div>
 		</div>
+		<br><br>
 
 	<!-- Fourth Page (Contact) -->
 		<div class="row row-footer text-center">
