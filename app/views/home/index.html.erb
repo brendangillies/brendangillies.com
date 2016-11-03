@@ -6,7 +6,6 @@
 
 <!-- Top content -->
 <div class="top-content container-fluid">
-	
 	<div class='video-background'>	
 			<%= video_tag "turbine", :controls => false, :autoplay => true, :loop => true %>
 	</div>
@@ -60,18 +59,32 @@
 					</div>
 					
 					
-					<p><%= link_to "Wind Powered Pump"%></p>
+					<!-- Trigger the modal with a button -->
+					<p>
+						<button data-toggle="modal" data-target="#myModal2">Wind Powered Pump</button></p>
+
+					<!-- Modal -->
+					<div id="myModal2" class="modal fade" role="dialog">
+					  <div class="modal-dialog">
+
+					    <!-- Modal content-->
+					    <div class="modal-content">
+					      <div class="modal-header">
+					        <button type="button" class="close" data-dismiss="modal">&times;</button>
+					        <h4 class="modal-title">Wind Powered Pump</h4>
+					      </div>
+					      <div class="modal-body">
+							<p>Description & photos coming soon.</p>
+					      </div>
+					   </div>
+				   	</div>
+					</p>
 				</div>
 			</div>
 		</div>
 		<br><br>
 		
-		<!-- Fourth Page (Contact) -->
-			<div class="row row-footer text-center">
-		 	   <a href="mailto:admin@brendangillies.com?Subject=Hello"><i href="/contacts/new" class="fa fa-envelope-o fa-3x footer-icon"></i></a>
-			  <a href="https://www.linkedin.com/in/brendangillies"><i class="fa fa-linkedin fa-3x footer-icon"></i></a>
-			</div>
-
 </div>
+		
 
 

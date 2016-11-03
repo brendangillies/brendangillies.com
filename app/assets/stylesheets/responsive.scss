@@ -3,11 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-
 //Mobile
 @media (max-width: 480px) {
+
 }
 
-//Tablet & Desktop
-@media (min-width: 481px) {
+//Tablet
+@media (min-width: 481px) and (max-width: 769px) {
+
+}
+
+
+@media (min-width: 769px) {
+
 }
