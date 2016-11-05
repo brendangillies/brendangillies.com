@@ -5,15 +5,28 @@
 
 //Mobile
 @media (max-width: 480px) {
-
+	.top-content { 
+		img { 
+			max-width: 90% ;
+		}
+	}
 }
 
 //Tablet
 @media (min-width: 481px) and (max-width: 769px) {
-
+	.top-content { 
+		img { 
+			max-width: 30em ;
+		}
+	}
 }
 
 
 @media (min-width: 769px) {
+	.top-content { 
+		img { 
+			max-width: 30em ;
+		}
+	}
 
 }

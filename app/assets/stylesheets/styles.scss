@@ -16,21 +16,16 @@ button {
 	border: none;
 }
 
-.mobile-content { 
+.top-content { 
 	width: 100%;
 	min-height: 100vh;
 	background: rgb(248,248,248);
 	background-size: cover;
 	img { 
-		max-width: 30em;
+		max-width: 30em ;
 	}
 }
 
-.top-content { 
-	background: rgba(255,255,255,0.8);
-	background-size: cover;
-	min-height: 100vh;
-}
 .video-background {
     position: fixed;
       top: 0;
