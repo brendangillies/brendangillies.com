@@ -23,12 +23,10 @@
 			<div class='container container-fixed text-center'>	
 				<div class='col-xs-6 col-md-3 col-md-offset-3'>
 					<h2>Blog Posts</h2>
-					<p><%=link_to "Responsive Design with Rails 5 & Bootstrap 4", blog_path %></p>
+					<p><%=link_to "Responsive Rails App Tutorial", blog_path %></p>
 				</div>
 				<div class='col-xs-6 col-md-3'>
 					<h2>Projects</h2>
-					<p><a href='https://rhubarbcollective.com' target='_blank'>Rhubarb Collective</a></p>
-					
 					<!-- Trigger the modal with a button -->
 					<p><a data-toggle="modal" data-target="#myModal">3D Printed Guitar Orthotic</a></p>
 
@@ -71,7 +69,9 @@
 					        <h4 class="modal-title">Wind Powered Pump</h4>
 					      </div>
 					      <div class="modal-body">
-							<p>Project won top prize in MEC E 360 design competition.</p>
+							<p class='text-left'>Project won top prize in MEC E 360 competition to design a low-cost oil extraction device powered by wind, with the requirement of a direct mechanical power train.<br><br>
+							*Picture is not to scale & missing bearing details. Approximate height 16m, well depth 1100m.
+							</p>
 							<%=image_tag 'turbine'%>
 					      </div>
 					   </div>
