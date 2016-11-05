@@ -1,68 +1,83 @@
 <%=render :partial => 'navigation'%>
 
 <div class='mobile-content container container-fluid'> 
-	<div class='col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-3'>
+	<div class='col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2'>
 		<h1><%=link_to "Blog", root_path%></h1>
 		<hr></hr>
-		<h2>How I learned to Code</h2>
-		<p>
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 	
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			
-		</p>
+		<h2>Fast Start to Responsive Websites using Ruby on Rails 5 & Bootstrap 4</h2>
+		
+		<p></p>
+		
+		<p>In order to complete this tutorial, you'll need to have Rails 5 up and running, and Ruby 2.2.2 or newer.</p>
+		
+		<p>In order to verify which version of ruby you're running, run the following command in your console:</p>
+		<pre>
+		<code>$ ruby -v
+		ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]</code></pre>
+		
+		<p>Your console whould return which ruby something similar if you've got ruby installed. I'm using Ruby 2.3.1</p>
+		<p>Similarly, you can confirm that you are using rails 5:</p>
+		<pre>
+		<code>$ rails -v 	
+		Rails 5.0.0.1</code></pre>
+		
+		<p>Once you're set up with Rails 5, we're ready to create our responsive web application.</p>
+		
+		<pre>
+		<code>$ rails new ResponsiveApp</code></pre>
+		<p>After everything installs, make sure you change to the newly created application folder.</p>
+		<pre>
+		<code>$ cd RespsonsiveApp</code></pre>
+		<p>You can now verify that everything is working by starting the server inside of your console:</p>
+		<pre>
+		<code>$ rails s
+		=> Booting Puma
+		=> Rails 5.0.0.1 application starting in development on http://localhost:3000
+		=> Run `rails server -h` for more startup options
+		Puma starting in single mode...
+		* Version 3.6.0 (ruby 2.3.1-p112), codename: Sleepy Sunday Serenity
+		* Min threads: 5, max threads: 5
+		* Environment: development
+		* Listening on tcp://localhost:3000
+		Use Ctrl-C to stop</code></pre> 
+		<p>Visiting localhost:3000 in your internet browser should bring up the following page:</p>
+		<%=image_tag 'rails5'%>
 		<br>
-		<p>
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200.
-		</p>
+		<p>You can stop running the server by pressing "Control + C" on a Macbook.</p>
 		<br>
-		<p> 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200.
-		</p>
-		<br>
-		<p> 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-		</p>
-		<hr></hr>
-		<h2>Experiments in Outsourcing</h2>
-		<p>
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 	
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			
-		</p>
-		<br>
-		<p>
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200.
-		</p>
-		<br>
-		<p> 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200.
-		</p>
-		<br>
-		<p> 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-			This is going to be a whole bunch of content. Let's aim for minimum 500 words, maximum 1200. 
-		</p>
-		<br><br>
+		<p>Next, let's create a new controller with an index view and action.</p>
+		<pre>
+		<code>$ rails g controller Landing index
+		Running via Spring preloader in process 9903
+		      create  app/controllers/landing_controller.rb
+		       route  get 'landing/index'
+		      invoke  erb
+		      create    app/views/landing
+		      create    app/views/landing/index.html.erb
+		      invoke  test_unit
+		      create    test/controllers/landing_controller_test.rb
+		      invoke  helper
+		      create    app/helpers/landing_helper.rb
+		      invoke    test_unit
+		      invoke  assets
+		      invoke    coffee
+		      create      app/assets/javascripts/landing.coffee
+		      invoke    scss
+		      create      app/assets/stylesheets/landing.scss</code></pre>
+		
+		<p>Now open up the application files using your text editor of choice; I'm using TextMate but there are lots of good options out there.</p>
+		<p>Let's start by setting the root path of the application to the newly created landing/index page. <br>Open up app/config/routes.rb and add the following:</p>
+		<pre>
+		<code>root 'landing#index'</code></pre>
+		<p>You can also remove the <code>get 'landing/index'</code> route that was autogenerated when creating the landing controller.</p><br>
+		
+		<p>Now if we restart the server by running <code>$rails s</code> in the terminal and reloading localhost:3000 in your browser, you'll see that the application directs you to the landing/index view. Which is not so exciting at this time.</p>
+		<%= image_tag 'landing1'%>
+		
+		<p>For the purposes of this tutorial, this is the only routing we'll need to complete! As you build out your web application, you can read more about rails routing <a href="http://guides.rubyonrails.org/routing.html" target=_blank?>here.</a></p>
+		<p>Next, we'll install bootstrap 4 into the application. Exact instructions can be found <a>here</a></p>
 	</div>
+	
 </div>
 
 		
