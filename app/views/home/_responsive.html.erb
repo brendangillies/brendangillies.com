@@ -48,7 +48,6 @@ invoke    coffee
 create      app/assets/javascripts/landing.coffee
 invoke    scss
 create      app/assets/stylesheets/landing.scss</code></pre>
-<p>Done. This is why I like working with rails.</p>
 <p><strong>Step 3: Configure Your Routes</strong></p>	
 <p>Open up the application files using your text editor of choice; I'm using TextMate but there are lots of good options out there.</p>
 <p>Let's start by setting the root path of the application to the newly created landing/index page. <br>Open up app/config/routes.rb and add the following:</p>
@@ -107,7 +106,7 @@ Use `bundle show [gemname]` to see where a bundled gem is installed.
 
 <p><strong>Step 6: Start with A Template</strong></p>
 <br> 
-<p>For the purposes of this tutorial, I've decided to find a free online template to start with. <a href="https://themewagon.com" target="_blank?">ThemeWagon</a> came up immediately when I started my google search, and seems pretty cool, so let's start there. I've decided to use the <a href="https://themewagon.com/themes/free-bootstrap-html5-landing-page-template-lazyfox/" target="_blank?">Lazy Fox template but feel free to choose another.</a></p>
+<p>For the purposes of this tutorial, I've decided to find a free online template to start with. <a href="https://themewagon.com" target="_blank?">ThemeWagon</a> came up immediately when I started my google search for "Free Responsive Bootstrap Templates", so let's start there. I've decided to use the <a href="https://themewagon.com/themes/free-bootstrap-html5-landing-page-template-lazyfox/" target="_blank?">Lazy Fox template but feel free to choose another.</a></p>
 
 <p>This template leverages the <a href=>ionicons</a> icon library.  My preferred method of adding this is to use the  gem available <a href="#">here</a>, and involves the following steps:</p>
 
@@ -117,7 +116,7 @@ gem 'ionicons-rails'</code></pre>
 
 
 Then run bundle install: 
-<pre><code>bundle install
+<pre><code>$bundle install
 Fetching gem metadata from https://rubygems.org/
 Fetching version metadata from https://rubygems.org/
 Fetching dependency metadata from https://rubygems.org/
@@ -128,7 +127,68 @@ Installing ionicons-rails 2.0.0
 Bundle complete! 17 Gemfile dependencies, 65 gems now installed.</code></pre>
 
 
+<p>Now we have copy the files into the appropriate location into your rails application. To start, open the index.html and transfer all of the contents into your index.html.erb file. Alternately, replace the entire file and add the .erb extension.</p>
 
+<p>You'll also have to copy all images into the assets/images folder of your application
+
+<br>
+Now comes the tedious part of using a template, where we need to cut out the appropriate part of the template and place it in our views/layouts/application.html.erb file, leave the remaining html that we'd like to keep, and update the broken links with ruby-appropriate tags.<br>  
+
+After editing a few things, these are the final files that I have: 
+
+
+
+
+Note that this required me to find all of the current <code>&ltimg&gt</code> tags in the template with the rails-appropriate <code>&lt%=image_tag%&gt</code>, feel free to steal this to save some time: <br>
+</p>
+
+views/layouts/application.html.erb
+<%=render :partial => 'responsive_application'%>
+
+views/landing/index.html.erb
+<%=render :partial => "responsive_index"%>
+
+
+
+
+
+<p>All of the Javascript files included in the template application need to be copied over into the assets/javascripts folder, with the exception of the bootstrap.min files, which we've added in Step 5.</p> 
+
+<p>Likewise, you'll need to copy over all of the css files in to your assets/stylesheets folder. Once again, make sure you leave out the bootstrap file since we've already configured this using the gem. Note that we'll have to change the extensions.</p>
+
+<p>Here's what the final application.scss file and folder structure looks like:</p> 
+<div class='col-sm-6'>
+<pre><code>@import "bootstrap";
+@import "styles";
+@import "responsive";
+@import "owl_carousel";
+@import "owl_theme";
+@import 'ionicons';</code></pre>
+</div>
+<div class='col-sm-6'>
+<%=image_tag 'stylesheets'%>
+</div> 
+<br>
+<p>For now, let's leave out Fonts folder as we'll customize these later, and the Ionicons files are managed by the gem we previously installed.</p>
+<br>
+<p>Now, we can test out set up by restarting the rails server and checking out the improvements. If everything was done correctly, we should have a working responsive site that looks like the one below, and at the sample site <a href="https://technext.github.io/Lazyfox/" target='_blank?'>here.</a> Test out the layout by playing with the views, or using the Responsive Design view depending which browser you're working with.</p>
+
+<div class='col-xs-6'>
+	<%=image_tag 'lazyfox'%>
+</div>
+<div class='col-xs-6'>
+	<%=image_tag 'mobile_lazyfox'%>
+</div>
+<br><br><br><br>
+
+
+
+
+
+
+
+
+<br><br>
 
 
 

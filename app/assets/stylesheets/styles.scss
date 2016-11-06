@@ -16,6 +16,10 @@ button {
 	border: none;
 }
 
+img { 
+	max-width: 100%;
+}
+
 .top-content { 
 	width: 100%;
 	min-height: 100vh;
@@ -255,4 +259,9 @@ hr.small {
     margin: 5px 5px 0 0;
 }
 
+
+.responsive_index, .responsive_application { 
+	height: 40vh; 
+	overflow-y: visible;
+}
 
