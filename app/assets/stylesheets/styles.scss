@@ -11,6 +11,10 @@ $primary: #34495E;
 $secondary: #a3c2c2;
 
 
+body { 
+	overflow-x: hidden;
+}
+
 button { 
 	background: none;
 	border: none;
@@ -89,9 +93,6 @@ h2, h3 {
 
 p {
 	font-family: 'Raleway', sans-serif;
-	a { 
-		font-weight: bold;
-	}
 }
 
 
