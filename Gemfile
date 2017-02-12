@@ -13,6 +13,7 @@ gem 'bootstrap-sass', '~> 3.3.3'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+gem 'threejs-rails', git: 'git://github.com/marvindanig/threejs-rails.git'
 
 gem 'autoprefixer-rails'
 
