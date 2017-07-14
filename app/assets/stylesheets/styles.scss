@@ -10,7 +10,6 @@
 $primary: #34495E;
 $secondary: #a3c2c2;
 
-
 body { 
 	overflow-x: hidden;
 }
@@ -28,7 +27,6 @@ button {
 
 /* override position and transform in 3.3.x */
 .carousel-inner { 
-	max-height: 35vh; 
 	overflow: hidden;
 }
 
